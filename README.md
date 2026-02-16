@@ -31,6 +31,28 @@ Then open the app in your browser at `http://127.0.0.1:5000/`.
 - For production use, prefer a WSGI server like gunicorn or waitress behind a reverse proxy. For local development, `python app.py` is sufficient.
 - The model file `startup_rf_model.pkl` is already included in the repo; no extra download is needed.
 
+## Sample input and expected output
+Use these values in the form to verify everything is wired correctly. The exact probability may vary slightly between systems due to library versions, but the label (success/failure) should match.
+
+| Field | Sample value |
+| --- | --- |
+| Age at First Funding Year | 2 |
+| Age at Last Funding Year | 5 |
+| Age at First Milestone Year | 1 |
+| Age at Last Milestone Year | 4 |
+| Number of Relationships | 10 |
+| Number of Funding Rounds | 3 |
+| Total Funding (in USD) | 1500000 |
+| Number of Milestones | 2 |
+| Average Participants | 5 |
+
+**Expected output:**
+```
+the startup has 75.76% of success, likely to be success
+```
+
+If you see a similar percentage (around 70–85%) and the label `success`, the app is working. If you get `failure`, double-check the input order and ensure the model file is present.
+
 ## Common issues
 - **Execution policy blocks venv activation:** Run PowerShell as Administrator and execute `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`, then reactivate the venv.
 - **Port already in use:** Stop whatever is using port 5000 or change the port via `app.run(host='0.0.0.0', port=5001)` when running locally.

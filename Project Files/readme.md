@@ -1,4 +1,4 @@
-# Prosperity Prognosticator (Startup Success Prediction)
+# Prosperity-Prognosticator-Machine-Learning-for-Startup-Success-Prediction
 
 Simple Flask app that loads a trained Random Forest model (`startup_rf_model.pkl`) to predict startup success probability from form inputs.
 

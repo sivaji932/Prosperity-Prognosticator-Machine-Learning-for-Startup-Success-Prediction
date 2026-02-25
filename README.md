@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Prosperity-Prognosticator-Machine-Learning-for-Startup-Success-Prediction
-=======
 # Prosperity-Prognosticator-Machine-Learning-for-Startup-Success-Prediction
 
 ## Abstract
@@ -63,4 +60,3 @@ the startup has 75.76% of success, likely to be success
 
 - **PowerShell blocks venv activation:** run `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` then re-activate.
 - **Port 5000 already in use:** change to `app.run(host='0.0.0.0', port=5001)` for local runs.
->>>>>>> d9d6825 (Initial commit)

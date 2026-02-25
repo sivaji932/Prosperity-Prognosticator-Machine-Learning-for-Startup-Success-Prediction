@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-Project files of our project
-=======
-
 # Prosperity Prognosticator (Startup Success Prediction)
 
 Simple Flask app that loads a trained Random Forest model (`startup_rf_model.pkl`) to predict startup success probability from form inputs.
@@ -118,4 +114,3 @@ If you see a similar percentage (around 70–85%) and the label `success`, the a
 
 - **Execution policy blocks venv activation:** Run PowerShell as Administrator and execute `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`, then reactivate the venv.
 - **Port already in use:** Stop whatever is using port 5000 or change the port via `app.run(host='0.0.0.0', port=5001)` when running locally.
->>>>>>> d9d6825 (Initial commit)
